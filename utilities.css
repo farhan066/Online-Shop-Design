@@ -1,0 +1,195 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+
+  /* Text sizes */
+.lead {
+    font-size: 20px;
+  }
+  
+  .s {
+    font-size: 1rem;
+  }
+  
+  .m {
+    font-size: 2rem;
+  }
+  
+  .l {
+    font-size: 3rem;
+  }
+  
+  .xl {
+    font-size: 4rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Button */
+  .btn{
+    display: inline-block;
+    background-color: var(--1st-color);
+    color: #fff;
+    padding:10px 32px;
+    border-radius:3px;
+    position: relative;
+    transition: .3s;
+  }
+  .btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .3);
+    border-radius:3px;
+    width:0;
+    height: 100%;
+    transition: .6s;
+  }
+  .btn:hover::after{
+    width: 100%;
+  }
+  .btn-2{
+    display: inline-block;
+    border:2px solid var(--1st-color);
+    color: var(--1st-color);
+    padding:10px 30px;
+    border-radius: 50px;
+    position: relative;
+    transition: .3s;
+  }
+  .btn-2:hover{
+    background-color: var(--1st-color);
+    color: #fff;
+  }
+
+  .cart-btn{
+    display: block;
+    background-color: var(--1st-color);
+    color: #fff;
+    padding:10px 30px;
+    border-radius: 50px;
+    position: relative;
+    transition: .3s;
+    width: 153px;
+    text-align: center;
+    margin-top: 27px;
+    white-space:pre;
+  }
+  .cart-btn:hover{
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+  }
+  /* Margin */
+.my-1 {
+    margin: 1rem 0;
+  }
+  
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  
+  .my-3 {
+    margin: 2rem 0;
+  }
+  
+  .my-4 {
+    margin: 3rem 0;
+  }
+  
+  .my-5 {
+    margin: 4rem 0;
+  }
+  
+  .m-1 {
+    margin: 1rem;
+  }
+  
+  .m-2 {
+    margin: 1.5rem;
+  }
+  
+  .m-3 {
+    margin: 2rem;
+  }
+  
+  .m-4 {
+    margin: 3rem;
+  }
+  
+  .m-5 {
+    margin: 4rem;
+  }
+  
+  /* Padding */
+  .py-1 {
+    padding: 1rem 0;
+  }
+  
+  .py-2 {
+    padding: 1.5rem 0;
+  }
+  
+  .py-3 {
+    padding: 2rem 0;
+  }
+  
+  .py-4 {
+    padding: 3rem 0;
+  }
+  
+  .py-5 {
+    padding: 4rem 0;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .p-2 {
+    padding: 1.5rem;
+  }
+  
+  .p-3 {
+    padding: 2rem;
+  }
+  
+  .p-4 {
+    padding: 3rem;
+  }
+  
+  .p-5 {
+    padding: 4rem;
+  }
+  
+
+    /* ---Flex-box--- */
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    /* ---grid--- */
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
