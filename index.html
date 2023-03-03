@@ -318,10 +318,18 @@
             <img src="images/apple.png" alt="">
           </div>
           <div class="footer-bottom p-2">
-            <p class="text-center">Developed by Farhan</p>
+            <p class="text-center">Copywrite <span class="year"></span>. All rights reserved. || Developed by <a href="https://github.com/farhan066"><strong>Farhan</strong></a></p>
           </div>
         </div>
       </footer>
+
+
+      <!-- -----js------ -->
+      <script>
+        const year = document.querySelector(".year")
+
+        year.innerHTML = new Date().getFullYear()
+      </script>
     </body>
 </html>
 
